@@ -2,6 +2,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const contact = document.getElementById('contact')
 
     contact.addEventListener('click', () => {
-        alert("Contact Details!!")
+        window.location.href = 'https://github.com/Adityasinghvats/';
     })
 })
