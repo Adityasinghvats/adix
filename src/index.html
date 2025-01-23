@@ -9,11 +9,26 @@
 <body class="bg-black">
 <div class="m-4 grid sm:grid-cols-12 grid-cols-1">
     <div class="md:col-span-3 sm:col-span-2"></div>
-    <div class="pl-4 pr-4 pt-4 md:col-span-6 sm:col-span-8">
-        <div class="flex justify-start mb-20">
+    <div class="pl-4 pr-4 pt-4 md:col-span-6 sm:col-span-8" id="home">
+        <div class="flex justify-between items-center mb-20">
             <header>
                 <h1 class="text-white font-bold text-2xl">AdiX</h1>
             </header>
+            <div class="relative">
+                <button id="menu-btn" class="block focus:outline-none">
+                    <div class="hamburger-icon">
+                        <span class="block w-8 h-0.5 bg-white mb-1"></span>
+                        <span class="block w-8 h-0.5 bg-white mb-1"></span>
+                        <span class="block w-8 h-0.5 bg-white"></span>
+                    </div>
+                </button>
+                <nav id="menu" class="hidden absolute right-0 mt-2 w-48 bg-gray-700 rounded-lg shadow-lg">
+                    <a href="#home" class="block px-4 py-2 text-white">Home</a>
+                    <a href="#about" class="block px-4 py-2 text-white">About</a>
+                    <a href="#projects" class="block px-4 py-2 text-white">Projects</a>
+                    <a href="#contact" class="block px-4 py-2 text-white">Contact</a>
+                </nav>
+            </div>
         </div>
         <div class="flex justify-center mb-14">
             <div class="m-5 rounded-full w-48 h-48 overflow-hidden">
@@ -46,7 +61,7 @@
                 <img src="./assets/medium (1).png" title="Medium" class="w-7 h-7"></a>
             </a>
         </div>
-        <div class="flex flex-col justify-center pt-5 pb-10">
+        <div class="flex flex-col justify-center pt-5 pb-10" id="about">
             <hr>
             <h1 class="text-sky-200 pt-5 text-6xl">About me:</h1>
             <br>
@@ -61,12 +76,12 @@
                  and love building projects from scratch.
             </p>
         </div>
-        <div>
+        <div id="projects">
             <hr>
             <p class="text-sky-200 pt-5 text-6xl">Projects<br/>Showcase:</p>
             <div class="flex flex-col items-center justify-center space-y-8 pt-10">
                 <div id="node-dev" class="bg-slate-400 overflow-hidden w-64 rounded-lg shadow-lg">
-                    <img src="./assets/visula-markdown.png" alt="" class="object-cover w-full h-40">
+                    <img src="./assets/Screenshot 2025-01-23 140558.png" alt="" class="object-cover w-full h-40">
                     <div class="p-4">
                         <h3 class="text-xl font-semibold mb-2">Visual-MarkDown</h3>
                         <p class="text-gray-700">A Realtime Markdown to HTML converter that updates the HTML output as you type in Markdown.</p>
@@ -99,7 +114,7 @@
         <div>
             <hr/>
             <footer class="text-white py-8">
-                <div class="container mx-auto px-4">
+                <div class="container mx-auto px-4" id="contact">
                     <div class="flex flex-col md:flex-row justify-between items-center">
                         <div class="mb-4 md:mb-0">
                             <h2 class="text-lg font-semibold">Contact Me</h2>
