@@ -10,4 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     menuBtn.addEventListener('click', ()=>{
         menu.classList.toggle('hidden');
     })
+    menu.addEventListener('click', ()=>{
+        menu.classList.toggle('hidden');
+    })
 })
