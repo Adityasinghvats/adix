@@ -23,12 +23,12 @@
             <div class="relative">
                 <button id="menu-btn" class="block focus:outline-none">
                     <div class="hamburger-icon">
-                        <span class="block w-8 h-0.5 bg-white mb-1"></span>
-                        <span class="block w-8 h-0.5 bg-white mb-1"></span>
-                        <span class="block w-8 h-0.5 bg-white"></span>
+                        <span class="block w-8 h-0.5 bg-white mb-1 transition-transform duration-300 ease-in-out"></span>
+                        <span class="block w-8 h-0.5 bg-white mb-1 transition-transform duration-300 ease-in-out"></span>
+                        <span class="block w-8 h-0.5 bg-white transition-transform duration-300 ease-in-out"></span>
                     </div>
                 </button>
-                <nav id="menu" class="hidden absolute right-0 mt-2 w-48 bg-gray-700 rounded-lg shadow-lg">
+                <nav id="menu" class="hidden absolute right-0 mt-2 w-48 bg-gray-700/90 rounded-lg shadow-lg">
                     <a href="#home" class="block px-4 py-2 text-white">Home</a>
                     <a href="#about" class="block px-4 py-2 text-white">About</a>
                     <a href="#projects" class="block px-4 py-2 text-white">Projects</a>
@@ -45,7 +45,7 @@
             <h1 class="text-white text-6xl">Hi, I'm <br/>Aditya Singh Vats</h1>
             <p class="text-sky-300 font-thin italic pt-2 text-xl">Nice to meet you.</p>
         </div>
-        <div class="flex flex-row justify-center space-x-7 mb-16">
+        <div class="flex flex-row justify-center space-x-7 mb-12">
             <a href="https://github.com/Adityasinghvats" target="_blank" class="w-10 h-10 flex items-center justify-center
             bg-white rounded-full shadow-md
             hover:scale-110 hover:shadow-lg transition transform">
@@ -66,6 +66,17 @@
             hover:scale-110 hover:shadow-lg transition transform">
                 <img src="./assets/medium (1).png" title="Medium" class="w-7 h-7"></a>
             </a>
+        </div>
+        <div class="flex flex-row justify-center space-x-4 pb-5">
+            <hr>
+            <button class="rounded-full bg-red-500 p-2 w-32 h-12"
+            ><div class="flex flex-row justify-center space-x-2">
+                <span>npx adix</span>
+            <a id="copy-cli-link" href="https://www.npmjs.com/package/adix" target="_blank" class="flex items-center justify-center rounded-full">
+                <img src="./assets/copy.png" title="Medium" class="w-4 h-4"></a>
+            </a>
+            </div>
+        </button>
         </div>
         <div class="flex flex-col justify-center pt-5 pb-10" id="about">
             <hr>
