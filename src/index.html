@@ -18,74 +18,71 @@
     <div class="pl-4 pr-4 pt-4" id="home">
         <div class="flex justify-between items-center mb-20">
             <header>
-                <h1 class="text-white font-bold text-2xl">AdiX</h1>
+                <h1 class="text-white font-bold text-2xl">Ad<span class="text-red-500">i</span>X</h1>
             </header>
-            <div class="relative">
+            <div class="relative ">
                 <button id="menu-btn" class="block focus:outline-none">
                     <div class="hamburger-icon">
                         <span class="block w-8 h-0.5 bg-white mb-1 transition-transform duration-300 ease-in-out"></span>
                         <span class="block w-8 h-0.5 bg-white mb-1 transition-transform duration-300 ease-in-out"></span>
-                        <span class="block w-8 h-0.5 bg-white transition-transform duration-300 ease-in-out"></span>
+                        <span class="block w-8 h-0.5 bg-red-500 transition-transform duration-300 ease-in-out"></span>
                     </div>
                 </button>
                 <nav id="menu" class="hidden absolute right-0 mt-2 w-48 bg-gray-700/90 rounded-lg shadow-lg">
                     <a href="#home" class="block px-4 py-2 text-white">Home</a>
                     <a href="#about" class="block px-4 py-2 text-white">About</a>
-                    <a href="#projects" class="block px-4 py-2 text-white">Projects</a>
+                    <a href="#projects" class="block px-4 py-2 text-red-500">Projects</a>
                     <a href="#contact" class="block px-4 py-2 text-white">Contact</a>
                 </nav>
             </div>
         </div>
         <div class="flex justify-center mb-14">
-            <div class="m-5 rounded-full w-48 h-48 overflow-hidden">
+            <div class="m-5 rounded-full w-48 h-48 lg:w-56 lg:h-56 overflow-hidden">
                 <img src="./assets/WhatsApp Image 2025-01-22 at 12.29.46_81d25230.jpg" alt="" class="object-cover w-full h-full">
             </div>
         </div>
-        <div class="flex flex-col justify-center mb-12">
-            <h1 class="text-white text-6xl">Hi, I'm <br/>Aditya Singh Vats</h1>
+        <div class="flex flex-col justify-center mb-12 px-4 lg:px-14">
+            <h1 class="text-white text-6xl lg:text-7xl">Hi, I<span class="text-red-500">'</span>m <br/>Aditya Singh Vats</h1>
             <p class="text-sky-300 font-thin italic pt-2 text-xl">Nice to meet you.</p>
         </div>
         <div class="flex flex-row justify-center space-x-7 mb-12">
             <a href="https://github.com/Adityasinghvats" target="_blank" class="w-10 h-10 flex items-center justify-center
-            bg-white rounded-full shadow-md
+            bg-white rounded-full shadow-md hover:bg-sky-300
             hover:scale-110 hover:shadow-lg transition transform">
                 <img src="./assets/github.png" title="Github" class="w-8 h-8"></a>
             </a>
             <a href="https://x.com/Aditya11975137?t=t7-JItAySGYYjywiB_rlQQ&s=09" target="_blank" class="w-10 h-10 flex items-center justify-center
-            bg-white rounded-full shadow-md
+            bg-white rounded-full shadow-md hover:bg-sky-300
             hover:scale-110 hover:shadow-lg transition transform">
                 <img src="./assets/twitter.png" title="Twitter" class="w-7 h-7"></a>
             </a>
             <a href="http://www.linkedin.com/in/aditya-kumar-6882b2308" target="_blank" class="w-10 h-10 flex items-center justify-center
-            bg-white rounded-full shadow-md
+            bg-white rounded-full shadow-md hover:bg-sky-300
             hover:scale-110 hover:shadow-lg transition transform">
                 <img src="./assets/linkedin.png" title="LinkedIn" class="w-8 h-8"></a>
             </a>
             <a href="https://medium.com/@adityakumarbgs6" target="_blank" class="w-10 h-10 flex items-center justify-center
-            bg-white rounded-full shadow-md
+            bg-white rounded-full shadow-md hover:bg-sky-300
             hover:scale-110 hover:shadow-lg transition transform">
                 <img src="./assets/medium (1).png" title="Medium" class="w-7 h-7"></a>
             </a>
             <a href="https://leetcode.com/u/adityasinghvats/" target="_blank" class="w-10 h-10 flex items-center justify-center
-            bg-white rounded-full shadow-md
+            bg-white rounded-full shadow-md hover:bg-sky-300
             hover:scale-110 hover:shadow-lg transition transform">
                 <img src="./assets/web-development.png" title="Medium" class="w-7 h-7"></a>
             </a>
         </div>
-        <div class="flex flex-row justify-center space-x-4 pb-5">
-            <hr>
-            <button class="rounded-full bg-red-500 p-2 w-32 h-12"
-            ><div class="flex flex-row justify-center space-x-2">
-                <span>npx adix</span>
-            <a id="copy-cli-link" href="https://www.npmjs.com/package/adix" target="_blank" class="flex items-center justify-center rounded-full">
-                <img src="./assets/copy.png" title="Medium" class="w-4 h-4"></a>
-            </a>
+        <div class="flex flex-row justify-center space-x-4 pb-5 hover:scale-110 hover:shadow-lg transition transform">
+            <button class="rounded-full bg-red-500 hover:bg-sky-300 p-2 w-32 h-12" id="cli"
+            ><div class="flex flex-row justify-center space-x-2 items-center">
+                <span >npx adix</span>
+                <img src="./assets/copy.png" class="w-4 h-4 flex items-center justify-center rounded-full"></a>
             </div>
         </button>
         </div>
-        <div class="flex flex-col justify-center pt-5 pb-10" id="about">
-            <hr>
-            <h1 class="text-sky-200 pt-5 text-6xl">About me:</h1>
+        <hr class="w-full border-t border-gray-300 my-4">
+        <div class="flex flex-col justify-center pt-5 pb-10 px-4 lg:px-14" id="about">
+            <h1 class="text-sky-200 pt-5 text-6xl">About <span class="text-red-500">me</span>:</h1>
             <br>
             <p class="text-white text-xl">
                 I am a Software Developer and currently
@@ -98,41 +95,41 @@
                 and love building projects from scratch.
                 <br>
                 <br>
-                My Moto for life is <span class="text-sky-200">KISS</span>
+                My Moto for life is <span class="text-red-500">KISS</span>
                 <br>
                 Keep It Simple and Stupid.
             </p>
         </div>
-        <div id="projects">
-            <hr>
-            <p class="text-sky-200 pt-5 text-6xl">Projects<br/>Showcase:</p>
+        <div id="projects" class="">
+            <hr class="w-full border-t border-gray-300 my-4">
+            <p class="text-sky-200 pt-5 text-6xl px-4 lg:px-14">Projects<br/>Showcase<span class="text-red-500">:</span></p>
             <div class="flex flex-col items-center justify-center space-y-8 pt-10">
-                <div id="Visual-MarkDown" class="bg-slate-400 overflow-hidden w-64 rounded-lg shadow-lg">
-                    <img src="./assets/Screenshot 2025-01-23 140558.png" alt="" class="object-cover w-full h-40">
+                <div id="Visual-MarkDown" class="bg-slate-400 overflow-hidden w-64 lg:w-108 rounded-lg shadow-lg">
+                    <img src="./assets/Screenshot 2025-01-23 140558.png" alt="" class="object-cover w-full h-40 lg:h-68">
                     <div class="p-4">
                         <h3 class="text-xl font-semibold mb-2">Visual-MarkDown</h3>
                         <p class="text-gray-700">A Realtime Markdown to HTML converter that updates the HTML output as you type in Markdown.</p>
                         <a href="https://github.com/Adityasinghvats/Visual-MarkDown" class="underline">Link</a>
                     </div>
                 </div>
-                <div id="node-dev" class="bg-slate-400 overflow-hidden w-64 rounded-lg shadow-lg">
-                    <img src="./assets/Screenshot 2025-01-23 160807.png" alt="" class="object-cover w-full h-40">
+                <div id="node-dev" class="bg-slate-400 overflow-hidden w-64 lg:w-108 rounded-lg shadow-lg">
+                    <img src="./assets/Screenshot 2025-01-23 160807.png" alt="" class="object-cover w-full h-40 lg:h-68">
                     <div class="p-4">
                         <h3 class="text-xl font-semibold mb-2">Node-Dev</h3>
                         <p class="text-gray-700">A blogging platform for developers, built with appwrite.</p>
                         <a href="https://nodedev.vercel.app/" class="underline">Link</a>
                     </div>
                 </div>
-                <div id="game" class="bg-slate-400 overflow-hidden w-64 rounded-lg shadow-lg">
-                    <img src="./assets/urtaparinda.png" alt="" class="object-cover w-full h-40">
+                <div id="game" class="bg-slate-400 overflow-hidden w-64 lg:w-108 rounded-lg shadow-lg">
+                    <img src="./assets/urtaparinda.png" alt="" class="object-cover w-full h-40 lg:h-68">
                     <div class="p-4">
                         <h3 class="text-xl font-semibold mb-2">Urta-Parinda</h3>
                         <p class="text-gray-700">An obstacle avoidance game built using pygame.</p>
                         <a href="https://github.com/Adityasinghvats/Urta-Parinda" class="underline">Link</a>
                     </div>
                 </div>
-                <div id="cli" class="bg-slate-400 overflow-hidden w-64 rounded-lg shadow-lg">
-                    <img src="./assets/Screenshot 2025-01-25 112449.png" alt="" class="object-cover w-full h-40">
+                <div id="cli" class="bg-slate-400 overflow-hidden w-64 lg:w-108 rounded-lg shadow-lg">
+                    <img src="./assets/Screenshot 2025-01-25 112449.png" alt="" class="object-cover w-full h-40 lg:h-68">
                     <div class="p-4">
                         <h3 class="text-xl font-semibold mb-2">100x-potfolio</h3>
                         <p class="text-gray-700">A node based CLI which shows my portfolio in your terminal with `npx adix`</p>
@@ -142,35 +139,34 @@
             </div>
         </div>
         <div class="flex flex-row justify-center pt-8 space-x-4 pb-5">
-            <hr>
-            <button class="rounded-full bg-red-500 p-2 w-32 h-12" id="contact"
+            <button class="rounded-full bg-red-500 p-2 w-32 h-12 hover:bg-sky-300 hover:scale-110 hover:shadow-lg transition transform" id="contact"
             >Show me More</button>
         </div>
         <div>
-            <hr/>
+            <hr class="w-full border-t border-gray-300 my-4">
             <footer class="text-white py-8">
                 <div class="container mx-auto px-4" id="contact">
                     <div class="flex flex-col md:flex-row justify-between items-center">
                         <div class="mb-4 md:mb-0">
-                            <h2 class="text-lg font-semibold">Contact Me</h2>
+                            <h2 class="text-lg font-semibold">Contact <span class="text-red-500">Me</span></h2>
                             <p>Email: <a href="mailto:adityakumarbgs6@gmail.com" class="text-sky-400">adityakumarbgs6@gmail.com</a></p>
                             <p>Phone: <a href="tel:+91 8797052233" class="text-sky-400">+91 8797052233</a></p>
                             <p>Credits: <a href="https://www.flaticon.com/" class="text-sky-400">@Flaticon</a></p>
                         </div>
                         <div class="flex space-x-4">
-                            <a href="https://github.com/Adityasinghvats" target="_blank" class="w-8 h-8 flex items-center justify-center bg-white rounded-full shadow-md hover:scale-110 hover:shadow-lg transition transform">
+                            <a href="https://github.com/Adityasinghvats" target="_blank" class="w-8 h-8 flex items-center justify-center bg-white rounded-full shadow-md hover:scale-110 hover:shadow-lg transition transform hover:bg-sky-300">
                                 <img src="./assets/github.png" title="Github" class="w-6 h-6">
                             </a>
-                            <a href="https://x.com/Aditya11975137?t=t7-JItAySGYYjywiB_rlQQ&s=09" target="_blank" class="w-8 h-8 flex items-center justify-center bg-white rounded-full shadow-md hover:scale-110 hover:shadow-lg transition transform">
+                            <a href="https://x.com/Aditya11975137?t=t7-JItAySGYYjywiB_rlQQ&s=09" target="_blank" class="w-8 h-8 flex items-center justify-center bg-white rounded-full shadow-md hover:scale-110 hover:shadow-lg transition transform hover:bg-sky-300">
                                 <img src="./assets/twitter.png" title="Twitter" class="w-5 h-5">
                             </a>
-                            <a href="http://www.linkedin.com/in/aditya-kumar-6882b2308" target="_blank" class="w-8 h-8 flex items-center justify-center bg-white rounded-full shadow-md hover:scale-110 hover:shadow-lg transition transform">
+                            <a href="http://www.linkedin.com/in/aditya-kumar-6882b2308" target="_blank" class="w-8 h-8 flex items-center justify-center bg-white rounded-full shadow-md hover:scale-110 hover:shadow-lg transition transform hover:bg-sky-300">
                                 <img src="./assets/linkedin.png" title="LinkedIn" class="w-6 h-6">
                             </a>
-                            <a href="https://medium.com/@adityakumarbgs6" target="_blank" class="w-8 h-8 flex items-center justify-center bg-white rounded-full shadow-md hover:scale-110 hover:shadow-lg transition transform">
+                            <a href="https://medium.com/@adityakumarbgs6" target="_blank" class="w-8 h-8 flex items-center justify-center bg-white rounded-full shadow-md hover:scale-110 hover:shadow-lg transition transform hover:bg-sky-300">
                                 <img src="./assets/medium (1).png" title="Medium" class="w-5 h-5">
                             </a>
-                            <a href="https://leetcode.com/u/adityasinghvats/" target="_blank" class="w-8 h-8 flex items-center justify-center bg-white rounded-full shadow-md hover:scale-110 hover:shadow-lg transition transform">
+                            <a href="https://leetcode.com/u/adityasinghvats/" target="_blank" class="w-8 h-8 flex items-center justify-center bg-white rounded-full shadow-md hover:scale-110 hover:shadow-lg transition transform hover:bg-sky-300">
                                 <img src="./assets/web-development.png" title="Medium" class="w-5 h-5">
                             </a>
                         </div>
