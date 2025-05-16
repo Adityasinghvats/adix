@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-SB0Z195VEZ"></script>
       <script>
       window.dataLayer = window.dataLayer || [];
@@ -25,25 +24,12 @@
     </style>
 </head>
 <body class="bg-black">
-    <!-- Particles background with lower z-index -->
     <div id="particles-js" class="fixed inset-0 z-0"></div>
-    
-    <!-- Navigation dots with higher z-index -->
-    <div class="fixed right-5 top-1/2 transform -translate-y-1/2 z-50 hidden lg:block">
-        <div class="flex flex-col space-y-4">
-            <a href="#home" class="w-3 h-3 rounded-full bg-gray-500 hover:bg-red-500 transition-colors duration-300" id="nav-home"></a>
-            <a href="#about" class="w-3 h-3 rounded-full bg-gray-500 hover:bg-red-500 transition-colors duration-300" id="nav-about"></a>
-            <a href="#projects" class="w-3 h-3 rounded-full bg-gray-500 hover:bg-red-500 transition-colors duration-300" id="nav-projects"></a>
-            <a href="#contact" class="w-3 h-3 rounded-full bg-gray-500 hover:bg-red-500 transition-colors duration-300" id="nav-contact"></a>
-        </div>
-    </div>
-    
-    <!-- Main content with higher z-index -->
     <div class="relative z-10">
         <div class="pl-4 pr-4 pt-4" id="home">
             <div class="flex justify-between items-center mb-20">
                 <header>
-                    <h1 class="text-white font-bold text-2xl">Ad<span class="text-red-400">i</span>X</h1>
+                <h1 class="text-white font-bold text-2xl">Ad<span class="text-red-400">i</span>X</h1>
                 </header>
                 <div class="relative">
                     <button id="menu-btn" class="block focus:outline-none">
@@ -53,16 +39,18 @@
                             <span class="block w-8 h-0.5 bg-red-400 transition-transform duration-300 ease-in-out"></span>
                         </div>
                     </button>
-                    <nav id="menu" class="hidden absolute right-0 mt-2 w-48 bg-gray-700 rounded-lg shadow-lg z-50">
-                        <a href="#home" class="block px-4 py-2 text-white">Home</a>
-                        <a href="#about" class="block px-4 py-2 text-white">About</a>
-                        <a href="#projects" class="block px-4 py-2 text-red-400">Projects</a>
-                        <a href="#contact" class="block px-4 py-2 text-white">Contact</a>
+                    <nav id="menu" class="hidden fixed inset-0 w-full h-full bg-black/50 backdrop-blur-sm z-50">
+                        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full text-center">
+                            <a href="#home" class="block px-4 py-4 text-3xl text-white hover:text-sky-400 transition-colors">Home</a>
+                            <a href="#about" class="block px-4 py-4 text-3xl text-white hover:text-sky-400 transition-colors">About</a>
+                            <a href="#experience" class="block px-4 py-4 text-3xl text-red-400 hover:text-red-300 transition-colors">Experience</a>
+                            <a href="#projects" class="block px-4 py-4 text-3xl text-white hover:text-sky-400 transition-colors">Projects</a>
+                            <a href="#contact" class="block px-4 py-4 text-3xl text-white hover:text-sky-400 transition-colors">Contact</a>
+                        </div>
                     </nav>
                 </div>
             </div>
-            
-            <!-- Rest of your content remains the same -->
+          
             <div class="relative flex justify-center mb-14">
                 <div class="m-5 rounded-full w-48 h-48 lg:w-56 lg:h-56 overflow-hidden relative group">
                     <img src="./assets/Remove background project.png" alt="" class="object-cover w-full h-full transition-all duration-300 group-hover:scale-110">
@@ -106,78 +94,231 @@
                     <img src="./assets/web-development.png" title="Leetcode" class="w-7 h-7"></a>
                 </a>
             </div>
-            <div class="flex flex-row justify-center space-x-4 pb-5 hover:scale-110 hover:shadow-lg transition transform">
-                <button class="rounded-full bg-red-500 hover:bg-red-600 p-2 w-32 h-12" id="cli"
-                ><div class="flex flex-row justify-center space-x-2 items-center">
-                    <span >npx adix</span>
-                    <img src="./assets/copy.png" class="w-4 h-4 flex items-center justify-center rounded-full"></a>
-                </div>
-            </button>
+            <div class="flex flex-row justify-center space-x-4 pb-5">
+                <button class="rounded-full bg-red-500 hover:bg-red-600 hover:scale-110 hover:shadow-lg transition transform p-2 w-32 h-12" id="cli"
+                    ><div class="flex flex-row justify-center space-x-2 items-center">
+                        <span >npx adix</span>
+                        <img src="./assets/copy.png" class="w-4 h-4 flex items-center justify-center rounded-full"></a>
+                    </div>
+                </button>
+                <button class="rounded-full bg-red-500 hover:bg-red-600 hover:scale-110 hover:shadow-lg transition transform p-2 w-32 h-12" id="downloadResume"
+                    ><div class="flex flex-row justify-center space-x-2 items-center">
+                        <span >Resume</span>
+                        <img src="./assets/resume.png" class="w-4 h-4 flex items-center justify-center"></a>
+                    </div>
+                </button>
             </div>
             <hr class="w-full border-t border-gray-300 my-4">
-            <div class="flex flex-col justify-center pt-5 pb-10 px-4 lg:px-14" id="about">
+            <div class="container mx-auto pb-10 px-4 lg:px-14" id="about">
                 <h1 class="text-sky-200 pt-5 text-6xl">About me:</h1>
                 <br>
                 <p class="text-white text-xl">
-                    I am a Software Developer and currently
-                    <br> 
-                    exploring a wide range of tech.
-                    <br/>
-                    <br>
-                    I am learning Full-Stack Development
-                    <br/>
-                    and love building projects from scratch.
-                    <br>
-                    <br>
-                    My Moto for life is <span class="text-red-400">KISS</span>
-                    <br>
-                    Keep It Simple and Stupid.
+                    Hi, I'm Aditya, a passionate Software Developer currently immersed in full‑stack development. 
+                    <br/><br/>
+                    From spinning up REST APIs in Go to crafting pixel‑perfect interfaces with React, I love building projects from the ground up.
+                    <br/><br/>
+                    My motto <span class="text-red-400 hover:text-red-300 transition-colors">KISS</span> (Keep It Simple and Stupid) drives me to write clean, maintainable code that solves real problems. 
+                    <br/><br/>
+                    When I'm not coding, you'll find me exploring the latest frameworks or contributing to open‑source.
+                    <br/><br/> 
+                    <span class="italic">Dive into my work below, or let's connect and build something great together!</span>
                 </p>
             </div>
-            <div class="skills">
+            <div class="experience" id="experience">
                 <hr class="w-full border-t border-gray-300 my-4">
-                <p class="text-sky-200 pt-5 text-6xl px-4 lg:px-14">Skills:</p>
+                <p class="text-sky-200 pt-5 text-6xl px-4 lg:px-14">Experience:</p>
                 
-                <div class="px-4 lg:px-14 py-8">
-                    <div class="mb-6">
-                        <div class="flex justify-between mb-1">
-                            <span class="text-white">Backend Development</span>
-                            <span class="text-sky-300">85%</span>
-                        </div>
-                        <div class="w-full bg-gray-700 rounded-full h-2.5">
-                            <div class="bg-gradient-to-r from-red-500 to-sky-500 h-2.5 rounded-full" style="width: 85%"></div>
+                <div class="px-4 lg:px-14 py-8 rounded-lg shadow-lg">
+                    <div>
+                    <h1 class="text-white text-2xl font-bold pr-8">Software Development Intern <span class="text-lg font-thin italic">( May 2025 - Ongoing )</span></h1>
+                    <h1 class="text-white text-lg">Indian Meteorological Department, Kolkata</h1>
+                        <ul class="list-disc list-outside mx-auto w-fit pl-8 space-y-2 rounded-lg my-4">
+                            <li class="text-sky-100 text-lg italic leading-relaxed hover:text-sky-400 transition-colors">Develop Application Programming Interface (APIs) for Doppler Weather Radar Data.</li>
+                            <li class="text-sky-100 text-lg italic leading-relaxed hover:text-sky-400 transition-colors">Storing and Processing Raw Data to extract information of Latitude, Longitude, Cloud Reflectivity and Rainfall Rate.</li>
+                            <li class="text-sky-100 text-lg italic leading-relaxed hover:text-sky-400 transition-colors">Dashboard Development for easy access to data for 2D and 3D visualization and ability to find places with address or by using latitude and longitude.</li>
+                            <li class="text-sky-100 text-lg italic leading-relaxed hover:text-sky-400 transition-colors">Ability to rapidly sort through Raw Data from archives , download and delete data from storage.</li>
+                        </ul>
+                    <div class="flex place-items-start space-y-8 pt-2 pb-8 w-full">
+                        <div class="flex flex-wrap gap-2 ">         
+                            <span class="bg-sky-300 px-2 py-1 text-base lg:text-xl rounded-lg">Python</span>
+                            <span class="bg-yellow-300 px-2 py-1 text-base lg:text-xl rounded-lg ">NextJS</span>
+                            <span class="bg-sky-500 px-2 py-1 text-base lg:text-xl rounded-lg">FastAPI</span>
+                            <span class="bg-gray-500 px-2 py-1 text-base lg:text-xl rounded-lg">AWS S3 & EC2</span>
+                            <span class="bg-red-500 px-2 py-1 text-base lg:text-xl rounded-lg">Mongo DB</span>
+                            <span class="bg-gray-400 px-2 py-1 text-base lg:text-xl rounded-lg">LeafletJS</span>
+                            <span class="bg-yellow-300 px-2 py-1 text-base lg:text-xl rounded-lg">Globe GL</span>
                         </div>
                     </div>
-                    
-                    <div class="mb-6">
-                        <div class="flex justify-between mb-1">
-                            <span class="text-white">Frontend Development</span>
-                            <span class="text-sky-300">75%</span>
-                        </div>
-                        <div class="w-full bg-gray-700 rounded-full h-2.5">
-                            <div class="bg-gradient-to-r from-red-500 to-sky-500 h-2.5 rounded-full" style="width: 75%"></div>
-                        </div>
-                    </div>
-                    
-                    <div class="mb-6">
-                        <div class="flex justify-between mb-1">
-                            <span class="text-white">Problem Solving</span>
-                            <span class="text-sky-300">85%</span>
-                        </div>
-                        <div class="w-full bg-gray-700 rounded-full h-2.5">
-                            <div class="bg-gradient-to-r from-red-500 to-sky-500 h-2.5 rounded-full" style="width: 85%"></div>
-                        </div>
                     </div>
                 </div>
                 
+            </div>
+            
+            <div id="projects" class="">
+                <hr class="w-full border-t border-gray-300 my-4">
+                <p class="text-sky-200 pt-5 text-6xl px-4 lg:px-14">Projects<br/>Showcase:</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-7xl mx-auto px-4 lg:px-14 pt-10">
+                    <!-- flex flex-col items-center justify-center space-y-8 pt-10 -->
+                    <div id="Visual-MarkDown" class="bg-slate-400 overflow-hidden w-full rounded-lg shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl group">
+                        <div class="relative overflow-hidden">
+                            <img src="./assets/Screenshot 2025-03-18 213235.png" alt="" class="object-cover w-full h-40 lg:h-68 transition-transform duration-500 group-hover:scale-110">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                                <a href="https://chutki-url.vercel.app/" class="text-black font-bold px-4 py-2 mb-2 mx-auto bg-red-500 rounded-full hover:bg-red-600 transition-colors">View Project</a>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-xl font-semibold mb-2">Chutki-URL</h3>
+                            <p class="text-gray-700 mb-2">A Realtime ulr shortener service to make your lives easier.</p>
+                            
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-red-500 px-2 py-1 text-sm rounded-lg whitespace-nowrap">NextJS</span>
+                                <span class="bg-red-500 px-2 py-1 text-sm rounded-lg whitespace-nowrap">MongoDB</span>
+                                <span class="bg-red-500 px-2 py-1 text-sm rounded-lg whitespace-nowrap">Vercel</span> 
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="snippet-saver" class="bg-slate-400 overflow-hidden w-full rounded-lg shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl group">
+                        <div class="relative overflow-hidden">
+                            <img src="./assets/snippets.png" alt="" class="object-cover w-full h-40 lg:h-68 transition-transform duration-500 group-hover:scale-110">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                                <a href="https://adityasinghvats.github.io/snippets/" class="text-black font-bold px-4 py-2 mb-2 mx-auto bg-red-500 rounded-full hover:bg-red-600 transition-colors">View Project</a>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-xl font-semibold mb-2">Snippet-Saver</h3>
+                            <p class="text-gray-700 mb-2">Snippet-saver is a vscode extension tool for code snippets. </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-red-500 px-2 py-1 text-sm rounded-lg whitespace-nowrap">TypeScript</span>
+                                <span class="bg-red-500 px-2 py-1 text-sm rounded-lg whitespace-nowrap">VSIX</span>
+                                <span class="bg-red-500 px-2 py-1 text-sm rounded-lg whitespace-nowrap">Azure Hosting</span> 
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="node-dev" class="bg-slate-400 overflow-hidden w-full rounded-lg shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl group">
+                        <div class="relative overflow-hidden">
+                            <img src="./assets/Screenshot 2025-01-23 160807.png" alt="" class="object-cover w-full h-40 lg:h-68 transition-transform duration-500 group-hover:scale-110">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                                <a href="https://nodedev.vercel.app/" class="text-black font-bold px-4 py-2 mb-2 mx-auto bg-red-500 rounded-full hover:bg-red-600 transition-colors">View Project</a>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-xl font-semibold mb-2">Node-Dev</h3>
+                            <p class="text-gray-700 mb-2">A blogging platform for developers, built with appwrite.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-red-500 px-2 py-1 text-sm rounded-lg whitespace-nowrap">React</span>
+                                <span class="bg-red-500 px-2 py-1 text-sm rounded-lg whitespace-nowrap">Appwrite</span>
+                                <span class="bg-red-500 px-2 py-1 text-sm rounded-lg whitespace-nowrap">Cloudinary</span> 
+                                <span class="bg-red-500 px-2 py-1 text-sm rounded-lg whitespace-nowrap">Redux</span> 
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="Visual-MarkDown" class="bg-slate-400 overflow-hidden w-full rounded-lg shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl group">
+                        <div class="relative overflow-hidden">
+                            <img src="./assets/Screenshot 2025-01-23 140558.png" alt="" class="object-cover w-full h-40 lg:h-68 transition-transform duration-500 group-hover:scale-110">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                                <a href="https://visual-markdown.onrender.com" class="text-black font-bold px-4 py-2 mb-2 mx-auto bg-red-500 rounded-full hover:bg-red-600 transition-colors">View Project</a>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-xl font-semibold mb-2">Visual-MarkDown</h3>
+                            <p class="text-gray-700 mb-2">A Realtime Markdown to HTML converter that updates the HTML output as you type in Markdown.</p>
+                            
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-red-500 px-2 py-1 text-sm rounded-lg whitespace-nowrap">NodeJS</span>
+                                <span class="bg-red-500 px-2 py-1 text-sm rounded-lg whitespace-nowrap">Showdown</span>
+                                <span class="bg-red-500 px-2 py-1 text-sm rounded-lg whitespace-nowrap">Bootstrap</span> 
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="cli" class="bg-slate-400 overflow-hidden w-full rounded-lg shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl group">
+                        <div class="relative overflow-hidden">
+                            <img src="./assets/Screenshot 2025-01-25 112449.png" alt="" class="object-cover w-full h-40 lg:h-68 transition-transform duration-500 group-hover:scale-110">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                                <a href="https://github.com/Adityasinghvats/portfolio-100x" class="text-black font-bold px-4 py-2 mb-2 mx-auto bg-red-500 rounded-full hover:bg-red-600 transition-colors">View Project</a>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-xl font-semibold mb-2">100x-potfolio</h3>
+                            <p class="text-gray-700 mb-2">A node based CLI which shows my portfolio in your terminal with `npx adix`.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-red-500 px-2 py-1 text-sm rounded-lg whitespace-nowrap">NodeJS</span>
+                                <span class="bg-red-500 px-2 py-1 text-sm rounded-lg whitespace-nowrap">Enquirer</span>
+                                <span class="bg-red-500 px-2 py-1 text-sm rounded-lg whitespace-nowrap">Chalk</span> 
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="cricketgpt" class="bg-slate-400 overflow-hidden w-full rounded-lg shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl group">
+                        <div class="relative overflow-hidden">
+                            <img src="./assets/cricketgpt.jpg" alt="" class="object-cover w-full h-40 lg:h-68 transition-transform duration-500 group-hover:scale-110">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                                <a href="https://github.com/Adityasinghvats/CricketGPT" class="text-black font-bold px-4 py-2 mb-2 mx-auto bg-red-500 rounded-full hover:bg-red-600 transition-colors">View Project</a>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-xl font-semibold mb-2">CricketGPT</h3>
+                            <p class="text-gray-700 mb-2">A RAG based chatbot that will answer all your cricket queries with latest data.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-red-500 px-2 py-1 text-sm rounded-lg whitespace-nowrap">NextJS</span>
+                                <span class="bg-red-500 px-2 py-1 text-sm rounded-lg whitespace-nowrap">Langchain</span>
+                                <span class="bg-red-500 px-2 py-1 text-sm rounded-lg whitespace-nowrap">OpenAI</span> 
+                                <span class="bg-red-500 px-2 py-1 text-sm rounded-lg whitespace-nowrap">DataStaX</span> 
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="messdekho" class="bg-slate-400 overflow-hidden w-full rounded-lg shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl group">
+                        <div class="relative overflow-hidden">
+                            <img src="./assets/Screenshot 2025-02-25 215409.png" alt="" class="object-cover w-full h-40 lg:h-68 transition-transform duration-500 group-hover:scale-110">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                                <a href="https://messdekho-qnsh.onrender.com" class="text-black font-bold px-4 py-2 mb-2 mx-auto bg-red-500 rounded-full hover:bg-red-600 transition-colors">View Project</a>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-xl font-semibold mb-2">MessDekho</h3>
+                            <p class="text-gray-700 mb-2">One Stop Solution from finding accomodations near your college.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-red-500 px-2 py-1 text-sm rounded-lg whitespace-nowrap">Django</span>
+                                <span class="bg-red-500 px-2 py-1 text-sm rounded-lg whitespace-nowrap">TailwindCSS</span>
+                                <span class="bg-red-500 px-2 py-1 text-sm rounded-lg whitespace-nowrap">MongoDB</span> 
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="sankuchit" class="bg-slate-400 overflow-hidden w-full rounded-lg shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl group">
+                        <div class="relative overflow-hidden">
+                            <img src="./assets/sankuchit.png" alt="" class="object-cover w-full h-40 lg:h-68 transition-transform duration-500 group-hover:scale-110">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                                <a href="https://adityasinghvats.github.io/sankuchit/" class="text-black font-bold px-4 py-2 mb-2 mx-auto bg-red-500 rounded-full hover:bg-red-600 transition-colors">View Project</a>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-xl font-semibold mb-2">Sankuchit</h3>
+                            <p class="text-gray-700 mb-2">The easiest way to resize and optimize your images for the web.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-red-500 px-2 py-1 text-sm rounded-lg whitespace-nowrap">Golang</span>
+                                <span class="bg-red-500 px-2 py-1 text-sm rounded-lg whitespace-nowrap">TailwindCSS</span>
+                                <span class="bg-red-500 px-2 py-1 text-sm rounded-lg whitespace-nowrap">Lanzo3</span> 
+                                <span class="bg-red-500 px-2 py-1 text-sm rounded-lg whitespace-nowrap">Render</span> 
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="flex flex-row justify-center pt-8 space-x-4 pb-5">
+                <button class="rounded-full bg-red-500 hover:bg-red-600 p-2 w-32 h-12  hover:scale-110 hover:shadow-lg transition transform"
+                >Show me More</button>
             </div>
             <div>
                 <hr class="w-full border-t border-gray-300 my-4">
                 <p class="text-sky-200 pt-5 text-6xl px-4 lg:px-14">Tech Stack:</p>
                 <div class="flex flex-col place-items-start justify-center space-y-8 pt-10 pb-8">
-                    <!-- <p class="text-sky-600 text-xl px-4 lg:px-14">Programming Languages:</p> -->
-                    <div class="flex flex-wrap gap-2 px-4 lg:px-14">
-                        
+                    <div class="flex flex-wrap gap-2 px-4 lg:px-14"> 
                         <span class="bg-sky-300 px-2 py-1 text-base lg:text-xl rounded-lg">C++</span>
                         <span class="bg-yellow-300 px-2 py-1 text-base lg:text-xl rounded-lg ">Javascript</span>
                         <span class="bg-sky-500 px-2 py-1 text-base lg:text-xl rounded-lg">Golang</span>
@@ -185,7 +326,6 @@
                         <span class="bg-red-500 px-2 py-1 text-base lg:text-xl rounded-lg">Kotlin</span>
                         <span class="bg-gray-400 px-2 py-1 text-base lg:text-xl rounded-lg">MarkDown</span>
                     </div>
-                    <!-- <p class="text-red-400 text-xl px-4 lg:px-14">Database</p> -->
                     <div class="flex flex-wrap gap-2 px-4 lg:px-14">
                         <span class="bg-green-800 px-2 py-1 text-base lg:text-xl rounded-lg">MongoDB</span>
                         <span class="bg-sky-300 px-2 py-1 text-base lg:text-xl rounded-lg">PostgreSQL</span>
@@ -196,7 +336,7 @@
                         <span class="bg-red-300 px-2 py-1 text-base lg:text-xl rounded-lg">Sqlite</span>
                         
                     </div>
-                    <!-- <p class="text-red-400 text-xl px-4 lg:px-14">Frameworks:</p> -->
+                    
                     <div class="flex flex-wrap gap-2 px-4 lg:px-14">
                         <span class="bg-sky-600 px-2 py-1 text-base lg:text-xl rounded-lg">React</span>
                         <span class="bg-sky-200 px-2 py-1 text-base lg:text-xl rounded-lg">Django</span>
@@ -218,129 +358,6 @@
                     </div>
                 </div>
             </div>
-            <div id="projects" class="">
-                <hr class="w-full border-t border-gray-300 my-4">
-                <p class="text-sky-200 pt-5 text-6xl px-4 lg:px-14">Projects<br/>Showcase:</p>
-                <div class="flex flex-col items-center justify-center space-y-8 pt-10">
-                    <div id="Visual-MarkDown" class="bg-slate-400 overflow-hidden w-64 lg:w-108 rounded-lg shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl group">
-                        <div class="relative overflow-hidden">
-                            <img src="./assets/Screenshot 2025-03-18 213235.png" alt="" class="object-cover w-full h-40 lg:h-68 transition-transform duration-500 group-hover:scale-110">
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                                <a href="https://chutki-url.vercel.app/" class="text-black font-bold px-4 py-2 mb-2 mx-auto bg-red-500 rounded-full hover:bg-red-600 transition-colors">View Project</a>
-                            </div>
-                        </div>
-                        <div class="p-4">
-                            <h3 class="text-xl font-semibold mb-2">Chutki-URL</h3>
-                            <p class="text-gray-700 mb-2">A Realtime ulr shortener service to make your lives easier.</p>
-                            
-                            <div class="flex flex-wrap gap-2">
-                                <span class="bg-red-500 px-2 py-1 text-sm rounded-lg whitespace-nowrap">NextJS</span>
-                                <span class="bg-red-500 px-2 py-1 text-sm rounded-lg whitespace-nowrap">MongoDB</span>
-                                <span class="bg-red-500 px-2 py-1 text-sm rounded-lg whitespace-nowrap">Vercel</span> 
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div id="node-dev" class="bg-slate-400 overflow-hidden w-64 lg:w-108 rounded-lg shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl group">
-                        <div class="relative overflow-hidden">
-                            <img src="./assets/Screenshot 2025-01-23 160807.png" alt="" class="object-cover w-full h-40 lg:h-68 transition-transform duration-500 group-hover:scale-110">
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                                <a href="https://nodedev.vercel.app/" class="text-black font-bold px-4 py-2 mb-2 mx-auto bg-red-500 rounded-full hover:bg-red-600 transition-colors">View Project</a>
-                            </div>
-                        </div>
-                        <div class="p-4">
-                            <h3 class="text-xl font-semibold mb-2">Node-Dev</h3>
-                            <p class="text-gray-700 mb-2">A blogging platform for developers, built with appwrite.</p>
-                            <div class="flex flex-wrap gap-2">
-                                <span class="bg-red-500 px-2 py-1 text-sm rounded-lg whitespace-nowrap">React</span>
-                                <span class="bg-red-500 px-2 py-1 text-sm rounded-lg whitespace-nowrap">Appwrite</span>
-                                <span class="bg-red-500 px-2 py-1 text-sm rounded-lg whitespace-nowrap">Cloudinary</span> 
-                                <span class="bg-red-500 px-2 py-1 text-sm rounded-lg whitespace-nowrap">Redux</span> 
-                            </div>
-                        </div>
-                    </div>
-
-                    <div id="Visual-MarkDown" class="bg-slate-400 overflow-hidden w-64 lg:w-108 rounded-lg shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl group">
-                        <div class="relative overflow-hidden">
-                            <img src="./assets/Screenshot 2025-01-23 140558.png" alt="" class="object-cover w-full h-40 lg:h-68 transition-transform duration-500 group-hover:scale-110">
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                                <a href="https://github.com/Adityasinghvats/Visual-MarkDown" class="text-black font-bold px-4 py-2 mb-2 mx-auto bg-red-500 rounded-full hover:bg-red-600 transition-colors">View Project</a>
-                            </div>
-                        </div>
-                        <div class="p-4">
-                            <h3 class="text-xl font-semibold mb-2">Visual-MarkDown</h3>
-                            <p class="text-gray-700 mb-2">A Realtime Markdown to HTML converter that updates the HTML output as you type in Markdown.</p>
-                            
-                            <div class="flex flex-wrap gap-2">
-                                <span class="bg-red-500 px-2 py-1 text-sm rounded-lg whitespace-nowrap">NodeJS</span>
-                                <span class="bg-red-500 px-2 py-1 text-sm rounded-lg whitespace-nowrap">Showdown</span>
-                                <span class="bg-red-500 px-2 py-1 text-sm rounded-lg whitespace-nowrap">Bootstrap</span> 
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div id="cli" class="bg-slate-400 overflow-hidden w-64 lg:w-108 rounded-lg shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl group">
-                        <div class="relative overflow-hidden">
-                            <img src="./assets/Screenshot 2025-01-25 112449.png" alt="" class="object-cover w-full h-40 lg:h-68 transition-transform duration-500 group-hover:scale-110">
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                                <a href="https://github.com/Adityasinghvats/portfolio-100x" class="text-black font-bold px-4 py-2 mb-2 mx-auto bg-red-500 rounded-full hover:bg-red-600 transition-colors">View Project</a>
-                            </div>
-                        </div>
-                        <div class="p-4">
-                            <h3 class="text-xl font-semibold mb-2">100x-potfolio</h3>
-                            <p class="text-gray-700 mb-2">A node based CLI which shows my portfolio in your terminal with `npx adix`</p>
-                            <div class="flex flex-wrap gap-2">
-                                <span class="bg-red-500 px-2 py-1 text-sm rounded-lg whitespace-nowrap">NodeJS</span>
-                                <span class="bg-red-500 px-2 py-1 text-sm rounded-lg whitespace-nowrap">Enquirer</span>
-                                <span class="bg-red-500 px-2 py-1 text-sm rounded-lg whitespace-nowrap">Chalk</span> 
-                            </div>
-                        </div>
-                    </div>
-                    <div id="cli" class="bg-slate-400 overflow-hidden w-64 lg:w-108 rounded-lg shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl group">
-                        
-                        <div class="relative overflow-hidden">
-                            <img src="./assets/cricketgpt.jpg" alt="" class="object-cover w-full h-40 lg:h-68 transition-transform duration-500 group-hover:scale-110">
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                                <a href="https://github.com/Adityasinghvats/CricketGPT" class="text-black font-bold px-4 py-2 mb-2 mx-auto bg-red-500 rounded-full hover:bg-red-600 transition-colors">View Project</a>
-                            </div>
-                        </div>
-                        <div class="p-4">
-                            <h3 class="text-xl font-semibold mb-2">CricketGPT</h3>
-                            <p class="text-gray-700 mb-2">A RAG based chatbot that will answer all your cricket queries with latest data</p>
-                            <div class="flex flex-wrap gap-2">
-                                <span class="bg-red-500 px-2 py-1 text-sm rounded-lg whitespace-nowrap">NextJS</span>
-                                <span class="bg-red-500 px-2 py-1 text-sm rounded-lg whitespace-nowrap">Langchain</span>
-                                <span class="bg-red-500 px-2 py-1 text-sm rounded-lg whitespace-nowrap">OpenAI</span> 
-                                <span class="bg-red-500 px-2 py-1 text-sm rounded-lg whitespace-nowrap">DataStaX</span> 
-                            </div>
-                        </div>
-                    </div>
-                    <div id="cli" class="bg-slate-400 overflow-hidden w-64 lg:w-108 rounded-lg shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl group">
-                        
-                        <div class="relative overflow-hidden">
-                            <img src="./assets/Screenshot 2025-02-25 215409.png" alt="" class="object-cover w-full h-40 lg:h-68 transition-transform duration-500 group-hover:scale-110">
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                                <a href="https://github.com/Adityasinghvats/messdekho" class="text-black font-bold px-4 py-2 mb-2 mx-auto bg-red-500 rounded-full hover:bg-red-600 transition-colors">View Project</a>
-                            </div>
-                        </div>
-                        <div class="p-4">
-                            <h3 class="text-xl font-semibold mb-2">MessDekho</h3>
-                            <p class="text-gray-700 mb-2">One Stop Solution from finding accomodations near your college</p>
-                            <div class="flex flex-wrap gap-2">
-                                <span class="bg-red-500 px-2 py-1 text-sm rounded-lg whitespace-nowrap">Django</span>
-                                <span class="bg-red-500 px-2 py-1 text-sm rounded-lg whitespace-nowrap">TailwindCSS</span>
-                                <span class="bg-red-500 px-2 py-1 text-sm rounded-lg whitespace-nowrap">MongoDB</span> 
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="flex flex-row justify-center pt-8 space-x-4 pb-5">
-                <button class="rounded-full bg-red-500 hover:bg-red-600 p-2 w-32 h-12  hover:scale-110 hover:shadow-lg transition transform" id="contact"
-                >Show me More</button>
-            </div>
-            <!-- Add this before the contact section -->
     <div class="testimonials py-10">
         <hr class="w-full border-t border-gray-300 my-4">
         <p class="text-sky-200 pt-5 text-6xl px-4 lg:px-14 mb-10">What People Say:</p>
@@ -380,10 +397,10 @@
             </div>
         </div>
     </div>
-        <div>
-            <hr class="w-full border-t border-gray-300 my-4">
-            <footer class="text-white py-8">
-                <div class="container mx-auto px-4" id="contact">
+    <div id="contact" class="contact">
+        <hr class="w-full border-t border-gray-300 my-4">
+        <footer class="text-white py-8">
+                <div class="container mx-auto px-4" >
                     <div class="flex flex-col md:flex-row justify-between items-center">
                         <div class="mb-4 md:mb-0">
                             <h2 class="text-lg font-semibold">Contact <span class="text-red-400">Me</span></h2>
@@ -410,10 +427,8 @@
                         </div>
                     </div>
                 </div>
-            </footer>
-        </div>
+        </footer>
     </div>
-    <div class=""></div>
 </div>
     <script src="./script.js"></script>
 <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>

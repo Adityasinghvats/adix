@@ -2,17 +2,59 @@ document.addEventListener('DOMContentLoaded', () => {
     const contact = document.getElementById('contact');
     const menuBtn = document.getElementById('menu-btn');
     const menu = document.getElementById('menu');
-    const clibtn = document.getElementById('cli')
+    const clibtn = document.getElementById('cli');
+    const downloadResume = document.getElementById('downloadResume');
 
     contact.addEventListener('click', () => {
         window.location.href = 'https://github.com/Adityasinghvats/';
     })
 
-    menuBtn.addEventListener('click', ()=>{
+    menuBtn.addEventListener('click', (e) => {
+        e.stopPropagation(); // Prevent event bubbling
         menu.classList.toggle('hidden');
-    })
-    menu.addEventListener('click', ()=>{
-        menu.classList.toggle('hidden');
+        if (!menu.classList.contains('hidden')) {
+            menu.classList.add('flex');
+        } else {
+            menu.classList.remove('flex');
+        }
+    });
+
+    // Close menu when clicking anywhere on the menu
+    menu.addEventListener('click', () => {
+        menu.classList.add('hidden');
+        menu.classList.remove('flex');
+    });
+
+    // Prevent menu from closing when clicking menu items
+    menu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.stopPropagation();
+            menu.classList.add('hidden');
+            menu.classList.remove('flex');
+        });
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!menu.classList.contains('hidden') && !menuBtn.contains(e.target)) {
+            menu.classList.add('hidden');
+            menu.classList.remove('flex');
+        }
+    });
+
+    
+
+    downloadResume.addEventListener('click', async()=>{
+        try {
+            const link = document.createElement('a')
+            link.href = "./assets/Resume.pdf";
+            link.download = "aditya_resume.pdf"
+            document.body.appendChild(link)
+            link.click();
+            document.body.removeChild(link)
+        } catch (error) {
+            
+        }
     })
 
     clibtn.addEventListener('click',async ()=>{
@@ -34,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "Nice to meet you.",
         "Full-Stack Developer.",
         "Backend Developer.",
-        "Freelancer."
+        "Open-Source Contributor."
     ];
     
     let phraseIndex = 0;
@@ -69,27 +111,5 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Start the typewriter effect
     setTimeout(typeWriter, 1000);
-    const sections = document.querySelectorAll('section, div[id]');
-    const navDots = document.querySelectorAll('[id^="nav-"]');
     
-    window.addEventListener('scroll', () => {
-        let current = '';
-        
-        sections.forEach(section => {
-            const sectionTop = section.offsetTop;
-            const sectionHeight = section.clientHeight;
-            if (pageYOffset >= (sectionTop - sectionHeight / 3)) {
-                current = section.getAttribute('id');
-            }
-        });
-        
-        navDots.forEach(dot => {
-            dot.classList.remove('bg-red-500');
-            dot.classList.add('bg-gray-500');
-            if (dot.getAttribute('id') === `nav-${current}`) {
-                dot.classList.remove('bg-gray-500');
-                dot.classList.add('bg-red-500');
-            }
-        });
-    });
 })
