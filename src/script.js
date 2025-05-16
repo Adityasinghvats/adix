@@ -42,8 +42,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    
-
     downloadResume.addEventListener('click', async()=>{
         try {
             const link = document.createElement('a')
@@ -86,7 +84,6 @@ document.addEventListener('DOMContentLoaded', () => {
     
     function typeWriter() {
         const currentPhrase = phrases[phraseIndex];
-        
         if (isDeleting) {
             typewriterElement.textContent = currentPhrase.substring(0, charIndex - 1);
             charIndex--;
@@ -99,17 +96,13 @@ document.addEventListener('DOMContentLoaded', () => {
         
         if (!isDeleting && charIndex === currentPhrase.length) {
             isDeleting = true;
-            typingSpeed = 1000; // Pause at end
+            typingSpeed = 1000;
         } else if (isDeleting && charIndex === 0) {
             isDeleting = false;
             phraseIndex = (phraseIndex + 1) % phrases.length;
             typingSpeed = 500; // Pause before typing next phrase
         }
-        
         setTimeout(typeWriter, typingSpeed);
     }
-    
-    // Start the typewriter effect
     setTimeout(typeWriter, 1000);
-    
 })
