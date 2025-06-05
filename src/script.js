@@ -105,4 +105,36 @@ document.addEventListener('DOMContentLoaded', () => {
         setTimeout(typeWriter, typingSpeed);
     }
     setTimeout(typeWriter, 1000);
+
+    // Simple scroll animation
+const scrollElements = document.querySelectorAll('.scroll-trigger');
+
+const elementInView = (el, offset = 0) => {
+    const elementTop = el.getBoundingClientRect().top;
+    const elementBottom = el.getBoundingClientRect().bottom;
+    return elementTop <= (window.innerHeight || document.documentElement.clientHeight - offset && elementBottom >=0);
+};
+
+const displayScrollElement = (element) => {
+    element.classList.remove('translate-x-[-100%]', 'opacity-0');
+};
+const hideScrollElement = (element) => {
+    element.classList.add('translate-x-[-100%]', 'opacity-0');
+};
+
+const handleScrollAnimation = () => {
+    scrollElements.forEach((el) => {
+        if (elementInView(el)) {
+            displayScrollElement(el);
+        }else{
+            hideScrollElement(el)
+        }
+    });
+};
+
+window.addEventListener('scroll', ()=>{
+    handleScrollAnimation();
+});
+// Trigger on initial load
+handleScrollAnimation();
 })
